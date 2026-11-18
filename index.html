@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page about football, my favourite hobby, and how to get started.">
+    <title>Football | My Favourite Hobby</title>
+    <style>
+        /* All styling is included here so the page works offline. */
+        * { box-sizing: border-box; }
+        body { margin: 0; background: #f8f6ed; color: #20392d; font-family: Arial, sans-serif; line-height: 1.7; }
+        a { color: #205438; text-underline-offset: 0.25em; }
+        a:hover { color: #823c20; }
+        a:focus-visible, summary:focus-visible { outline: 3px solid #a54b23; outline-offset: 5px; }
+        ::selection { background: #ecd47e; color: #173a29; }
+        .skip-link { position: absolute; top: -100px; left: 1rem; padding: 0.7rem; background: white; z-index: 1; }
+        .skip-link:focus { top: 1rem; }
+        .page-header { background: #173e2c; color: #fffaf0; padding: 3.5rem max(1.4rem, calc((100% - 960px) / 2)); }
+        h1, h2, h3 { line-height: 1.2; }
+        h1 { font-family: Georgia, serif; font-size: clamp(2.8rem, 8vw, 5rem); font-weight: normal; margin: 0 0 1rem; }
+        .page-header p { max-width: 46ch; font-size: 1.15rem; margin: 0; }
+        nav { border-bottom: 1px solid #bcc8b9; }
+        nav ul { max-width: 1008px; margin: auto; padding: 1rem 1.5rem; list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem 2rem; }
+        nav a { display: inline-block; padding: 0.25rem 0; font-weight: bold; }
+        main { max-width: 1008px; margin: auto; padding: 0 1.5rem 3rem; }
+        section { padding-top: 2.5rem; }
+        h2 { font-family: Georgia, serif; font-size: 2rem; font-weight: normal; margin: 0 0 1rem; }
+        h3 { font-size: 1.15rem; margin: 1.6rem 0 0.6rem; }
+        p, li { max-width: 70ch; }
+        p { margin: 0 0 1rem; }
+        li { padding-bottom: 0.4rem; }
+        aside { background: #e5ebdb; padding: 1.3rem 1.5rem; margin-top: 1.5rem; }
+        aside h3 { margin-top: 0; }
+        aside p { margin-bottom: 0; }
+        details { padding: 1rem 0; border-top: 1px solid #bcc8b9; border-bottom: 1px solid #bcc8b9; }
+        summary { cursor: pointer; font-weight: bold; }
+        details p { margin: 0.8rem 0 0; }
+        .page-footer { background: #173e2c; color: #fffaf0; padding: 1.5rem max(1.4rem, calc((100% - 960px) / 2)); }
+        .page-footer a { color: #f0d783; }
+        .page-footer a:hover { color: white; }
+        .page-footer p { margin-bottom: 0.4rem; }
+        @media (max-width: 480px) { .page-header { padding-top: 2.5rem; padding-bottom: 2.5rem; } nav ul { gap: 0.4rem 1.2rem; } }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Header introduces the page; nav groups links to its sections. -->
+    <header class="page-header" id="top">
+        <h1>Football</h1>
+        <p>My favourite hobby: a ball, a team, and a reason to get outside.</p>
+    </header>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#why-football">Why football?</a></li>
+            <li><a href="#skills">Skills to practise</a></li>
+            <li><a href="#getting-started">Getting started</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main contains the page's central content. Each section has a heading. -->
+    <main id="main-content" tabindex="-1">
+        <section id="why-football" aria-labelledby="why-heading">
+            <h2 id="why-heading">Why I enjoy football</h2>
+            <p>Football is my favourite hobby because it combines exercise, skill, and teamwork. I enjoy the challenge of controlling the ball, finding space, and working with other players to create a chance to score.</p>
+            <p>One of the best things about football is how easy it is to start. A ball and a safe, open space are enough to practise basic skills. Playing with friends makes the game even more enjoyable, because everyone contributes something different to the team.</p>
+            <!-- An aside contains related information outside the main discussion. -->
+            <aside aria-labelledby="teamwork-heading">
+                <h3 id="teamwork-heading">More than scoring goals</h3>
+                <p>A useful pass, a well-timed tackle, or an encouraging word can help a team just as much as a goal. Football reminds me to communicate, respect others, and keep trying after a mistake.</p>
+            </aside>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills I like to practise</h2>
+            <!-- This article is a self-contained piece of advice. -->
+            <article aria-labelledby="practice-heading">
+                <h3 id="practice-heading">A simple football practice session</h3>
+                <p>A short session can focus on three useful skills:</p>
+                <ol>
+                    <li><strong>Dribbling:</strong> move between markers with small touches, keeping the ball close and looking up regularly.</li>
+                    <li><strong>Passing:</strong> use the inside of the foot to pass accurately to a partner, then control the return pass.</li>
+                    <li><strong>Shooting:</strong> aim at a chosen part of the goal and focus on accuracy before adding power.</li>
+                </ol>
+                <p>Practising these basics helps me become more confident when playing a match.</p>
+            </article>
+        </section>
+
+        <section id="getting-started" aria-labelledby="start-heading">
+            <h2 id="start-heading">Getting started</h2>
+            <p>You do not need expensive equipment to enjoy football. Start with a few essentials:</p>
+            <ul>
+                <li>A football and a safe area away from traffic and windows.</li>
+                <li>Comfortable clothing and footwear suited to the playing surface.</li>
+                <li>Water for breaks, and shin guards for matches.</li>
+                <li>A friend or a small group to practise with.</li>
+            </ul>
+            <!-- Details and summary provide an accessible, native disclosure. -->
+            <details>
+                <summary>My tip for a beginner</summary>
+                <p>Start with short passes and simple ball control. Take your time, learn from mistakes, and enjoy playing rather than expecting every touch to be perfect.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>Football &mdash; my favourite hobby.</p>
+        <a href="#top">Back to top</a>
+    </footer>
+</body>
+</html>
